@@ -20,7 +20,6 @@
       flex-direction: column;
       color: #d63384;
     }
-
     /* Màn mở đầu */
     .intro {
       position: absolute;
@@ -36,7 +35,6 @@
       z-index: 10;
       transition: opacity 1s ease, visibility 1s ease;
     }
-
     .intro h2 {
       font-size: 2.5em;
       color: #ff4da6;
@@ -47,17 +45,14 @@
       border-radius: 30px;
       box-shadow: 0 0 20px rgba(255, 128, 171, 0.6);
     }
-
     .intro.hidden {
       opacity: 0;
       visibility: hidden;
     }
-
     @keyframes pulse {
       0%, 100% { transform: scale(1); box-shadow: 0 0 15px rgba(255,128,171,0.8); }
       50% { transform: scale(1.1); box-shadow: 0 0 30px rgba(255,128,171,1); }
     }
-
     /* Thiệp */
     .card {
       background: rgba(255, 255, 255, 0.8);
@@ -71,27 +66,23 @@
       opacity: 0;
       transform: scale(0.95);
     }
-
     .card.show {
       opacity: 1;
       transform: scale(1);
       transition: all 1.5s ease;
     }
-
     h1 {
       font-size: 2.5em;
       color: #ff4da6;
       margin-bottom: 10px;
       text-shadow: 0 0 10px #fff;
     }
-
     p {
       font-size: 1.2em;
       color: #cc3a8a;
       margin-bottom: 20px;
       line-height: 1.6;
     }
-
     /* Nút quà */
     .gift-btn {
       background: linear-gradient(45deg, #ff66b2, #ff99cc);
@@ -110,16 +101,13 @@
       opacity: 0;
       transition: opacity 1s ease;
     }
-
     .gift-btn.show {
       opacity: 1;
     }
-
     .gift-btn img {
       width: 45px;
       height: 45px;
     }
-
     /* Ảnh hiện lên */
     .popup {
       position: fixed;
@@ -134,17 +122,14 @@
       transition: 0.5s ease;
       z-index: 20;
     }
-
     .popup img {
       max-width: 300px;
       border-radius: 12px;
       box-shadow: 0 0 15px rgba(255,182,193,0.8);
     }
-
     .popup.show {
       transform: translate(-50%, -50%) scale(1);
     }
-
     .popup button {
       margin-top: 10px;
       background: #ff66b2;
@@ -155,11 +140,9 @@
       cursor: pointer;
       transition: 0.3s;
     }
-
     .popup button:hover {
       background: #ff4da6;
     }
-
     /* Hoa rơi */
     .flower {
       position: absolute;
@@ -170,12 +153,10 @@
       opacity: 0.7;
       animation: fall linear infinite;
     }
-
     @keyframes fall {
       from { transform: translateY(-10vh) rotate(0deg); opacity: 1; }
       to { transform: translateY(110vh) rotate(360deg); opacity: 0; }
     }
-
     /* Sao lấp lánh */
     .star {
       position: absolute;
@@ -186,7 +167,6 @@
       animation: sparkle 2s infinite ease-in-out;
       opacity: 0.8;
     }
-
     @keyframes sparkle {
       0%, 100% { opacity: 0.3; }
       50% { opacity: 1; }
